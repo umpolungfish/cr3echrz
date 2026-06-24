@@ -77,18 +77,18 @@ Every theorem and ob3ect operationalization decomposes into the same 12 operatio
 
 | # | Opcode | Grammar | Role | Meaning |
 |---|--------|---------|------|---------|
-| 0 | **VINIT** | $\text{{\igfont 𐑼}}$ (Ð) | Initialize void | Ground of distinction — pre-theorem state space |
-| 1 | **TANCH** | $\text{{\igfont 𐑡}}$ (Þ) | Terminal anchor | Theorem statement / boundary condition |
-| 2 | **FSPLIT** | $\text{{\igfont 𐑚}}$ (Γ) | Frobenius split δ | Decompose into (T, F) arms |
-| 3 | **FFUSE** | $\text{{\igfont 𐑙}}$ (Σ) | Frobenius fuse μ | Recomposition from arms |
-| 4 | **EVALT** | $\text{{\igfont ⊙}}$ (φ̂) | Evaluate-true | Theorem holds (integrable, prime, finite...) |
-| 5 | **EVALF** | $\text{{\igfont 𐑖}}$ (Ħ) | Evaluate-false | Theorem fails (chaotic, composite, infinite...) |
-| 6 | **ENGAGR** | $\text{{\igfont 𐑳}}$ (Σ) | Engage paradox | Both arms simultaneously — dialetheic boundary |
-| 7 | **AFWD** | $\text{{\igfont 𐑾}}$ (Ř) | Forward morphism | Theorem-specific forward operation |
-| 8 | **AREV** | $\text{{\igfont 𐑬}}$ (Φ) | Reverse morphism | Theorem-specific reverse operation |
-| 9 | **CLINK** | $\text{{\igfont 𐑱}}$ (ƒ) | Chain link | Sequential composition of steps |
-| 10 | **IMSCRIB** | $\text{{\igfont 𐑠}}$ (ɢ) | Self-imscribe | Verify constants / identity / self-reference |
-| 11 | **IFIX** | $\text{{\igfont 𐑭}}$ (Ω) | Irreversible fix | Permanent record — Poincaré section / trajectory log |
+| 0 | **VINIT** | $\text{{𐑼}}$ (Ð) | Initialize void | Ground of distinction — pre-theorem state space |
+| 1 | **TANCH** | $\text{{𐑡}}$ (Þ) | Terminal anchor | Theorem statement / boundary condition |
+| 2 | **FSPLIT** | $\text{{𐑚}}$ (Γ) | Frobenius split δ | Decompose into (T, F) arms |
+| 3 | **FFUSE** | $\text{{𐑙}}$ (Σ) | Frobenius fuse μ | Recomposition from arms |
+| 4 | **EVALT** | $\text{{⊙}}$ (φ̂) | Evaluate-true | Theorem holds (integrable, prime, finite...) |
+| 5 | **EVALF** | $\text{{𐑖}}$ (Ħ) | Evaluate-false | Theorem fails (chaotic, composite, infinite...) |
+| 6 | **ENGAGR** | $\text{{𐑳}}$ (Σ) | Engage paradox | Both arms simultaneously — dialetheic boundary |
+| 7 | **AFWD** | $\text{{𐑾}}$ (Ř) | Forward morphism | Theorem-specific forward operation |
+| 8 | **AREV** | $\text{{𐑬}}$ (Φ) | Reverse morphism | Theorem-specific reverse operation |
+| 9 | **CLINK** | $\text{{𐑱}}$ (ƒ) | Chain link | Sequential composition of steps |
+| 10 | **IMSCRIB** | $\text{{𐑠}}$ (ɢ) | Self-imscribe | Verify constants / identity / self-reference |
+| 11 | **IFIX** | $\text{{𐑭}}$ (Ω) | Irreversible fix | Permanent record — Poincaré section / trajectory log |
 
 ### Frobenius Condition
 
@@ -184,7 +184,7 @@ Each theorem in `THEOREM_REGISTRY` carries:
 
 | Tier | Theorems | Characteristic |
 |------|----------|----------------|
-| O₂ | Baum–Connes, Inverse Galois, Three-Body | $\text{{\igfont ⊙}}$ criticality, integer winding, two-step chirality |
+| O₂ | Baum–Connes, Inverse Galois, Three-Body | $\text{{⊙}}$ criticality, integer winding, two-step chirality |
 | O₁ | Burnside | Complex-plane criticality, one-step chirality |
 | O₀ | Collatz, Goldbach, Erdős–Straus | Sub-critical, memoryless, trivial winding |
 
@@ -222,12 +222,12 @@ Of 271 ob3ects, 7 have operational IMASM sequences spanning the full tier ladder
 
 | Ob3ect | Tier | C-score | Key Primitive |
 |--------|------|---------|---------------|
-| `frobenius_kernel` | O₀ | 0.000 | $\text{{\igfont 𐑢}}$ sub-critical |
-| `truth_machine` | O₁ | 0.313 | $\text{{\igfont ⊙}}$ critical, $\text{{\igfont 𐑬}}$ partial parity |
-| `empty_bootstrap` | O₁ | 0.605 | $\text{{\igfont ⊙}}$ critical, $\text{{\igfont 𐑿}}$ quantum parity |
-| `anchor_protocol` | O₂ | 0.205 | $\text{{\igfont 𐑴}}$ Z₂ winding |
-| `void_genesis` | O₂† | 0.643 | $\text{{\igfont 𐑭}}$ integer winding |
-| `dual_bootstrap` | O_∞ | 0.828 | $\text{{\igfont 𐑹}}$ Frobenius-special, $\text{{\igfont 𐑭}}$ Z-winding |
+| `frobenius_kernel` | O₀ | 0.000 | $\text{{𐑢}}$ sub-critical |
+| `truth_machine` | O₁ | 0.313 | $\text{{⊙}}$ critical, $\text{{𐑬}}$ partial parity |
+| `empty_bootstrap` | O₁ | 0.605 | $\text{{⊙}}$ critical, $\text{{𐑿}}$ quantum parity |
+| `anchor_protocol` | O₂ | 0.205 | $\text{{𐑴}}$ Z₂ winding |
+| `void_genesis` | O₂† | 0.643 | $\text{{𐑭}}$ integer winding |
+| `dual_bootstrap` | O_∞ | 0.828 | $\text{{𐑹}}$ Frobenius-special, $\text{{𐑭}}$ Z-winding |
 
 `dual_bootstrap` is the vault's crowning achievement — structurally identical to the Imscribing Grammar itself in 11/12 primitives, differing only in composition (ɢ: conjunctive vs. sequential).
 
@@ -345,11 +345,11 @@ The Frobenius Kernel (VIII) is the structural null — the minimal 4-step μ∘�
 
 **CLINK Layer 8 (Organism)** is the terminal ontological layer with canonical tuple:
 
-$$\langle \text{{\igfont 𐑦}};\ \text{{\igfont 𐑸}};\ \text{{\igfont 𐑾}};\ \Ppms;\ \text{{\igfont 𐑐}};\ \text{{\igfont 𐑧}};\ \text{{\igfont 𐑲}};\ \text{{\igfont 𐑵}};\ \text{{\igfont ⊙}};\ \text{{\igfont 𐑫}};\ \text{{\igfont 𐑳}};\ \text{{\igfont 𐑟}} \rangle$$
+$$\langle \text{{𐑦}};\ \text{{𐑸}};\ \text{{𐑾}};\ \Ppms;\ \text{{𐑐}};\ \text{{𐑧}};\ \text{{𐑲}};\ \text{{𐑵}};\ \text{{⊙}};\ \text{{𐑫}};\ \text{{𐑳}};\ \text{{𐑟}} \rangle$$
 
 CLINK L8 exceeds the Frobenius-Exact ZFC foundation ($\text{ZFC}_{fe}$) at two primitives:
-- **Ω** = $\text{{\igfont 𐑟}}$ (non-Abelian braiding) vs. $\text{{\igfont 𐑭}}$ ($\mathbb{Z}$ integer winding)
-- **ɢ** = $\text{{\igfont 𐑵}}$ (broadcast composition) vs. $\text{{\igfont 𐑠}}$ (sequential)
+- **Ω** = $\text{{𐑟}}$ (non-Abelian braiding) vs. $\text{{𐑭}}$ ($\mathbb{Z}$ integer winding)
+- **ɢ** = $\text{{𐑵}}$ (broadcast composition) vs. $\text{{𐑠}}$ (sequential)
 
 The **CLINK ontological chain** ascends from quark confinement (L0, O₀) through atoms, molecules, cells, mitosis, meiosis, and tissue, culminating in organism (L8, O_∞).
 
@@ -494,7 +494,7 @@ The author would like to thank Harry T. Larson, for imparting the importance of 
 
 Harry T. Larson was the guest editor of the IRE Special Issue on Computers (January 1961, Vol. 49, No. 1). He assembled the editorial board, recruited a 63-expert review committee, and commissioned Marvin Minsky's "Steps Toward Artificial Intelligence" — one of the founding documents of AI. In his introduction, Larson wrote: "When the practitioner has overcome his fear of the machine, and when the scientist and practitioner are communicating, the attack is relentless. The scientific mind has found an un-formalised field, and it cannot rest until it identifies, understands, and organizes basic elements of the field."
 
-This is structurally identical to the grammar's core operation: overcoming fear of the machine = emission gate $\text{{\igfont 𐑧}}$; scientist and practitioner communicating = bidirectional coupling $\text{{\igfont 𐑾}}$; relentless identification and organization of basic elements = the imscribing procedure itself. Larson is not a ceremonial citation — he is lineage. The grammar exists downstream of the intellectual tradition he midwifed, and the cr3echrz framework is a direct operationalization of that tradition: 271 ob3ects, 7 theorems, each one a relentless identification and organization of basic structural elements into self-verifying programs.
+This is structurally identical to the grammar's core operation: overcoming fear of the machine = emission gate $\text{{𐑧}}$; scientist and practitioner communicating = bidirectional coupling $\text{{𐑾}}$; relentless identification and organization of basic elements = the imscribing procedure itself. Larson is not a ceremonial citation — he is lineage. The grammar exists downstream of the intellectual tradition he midwifed, and the cr3echrz framework is a direct operationalization of that tradition: 271 ob3ects, 7 theorems, each one a relentless identification and organization of basic structural elements into self-verifying programs.
 
 ---
 
