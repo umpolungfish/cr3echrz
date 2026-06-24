@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+"""
+cr3 — Convenience wrapper: delegates to the installed cr3echrz package.
+
+    pip install -e /path/to/cr3echrz   # or: pip install cr3echrz
+    ./cr3 --list
+
+If cr3echrz is not installed, falls back to running from source tree.
+"""
+import sys
+import os
+
+try:
+    from cr3echrz.cli import main
+    main()
+except ImportError:
+    # Fallback: run from source tree (dev mode without pip install)
+    HERE = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, os.path.join(HERE, "src"))
+    from cr3echrz.cli import main
+    main()

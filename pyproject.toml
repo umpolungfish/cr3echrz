@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cr3echrz"
+version = "1.0.0"
+description = "Unified cr3echrz framework — 12 universal IMASM opcodes, 7 theorem engines, 271 vault ob3ects, Belnap FOUR logic, Frobenius verification (μ∘δ=id)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Lando⊗⊙perator"}
+]
+keywords = [
+    "imscribing-grammar",
+    "belnap-logic",
+    "frobenius-verification",
+    "theorem-operationalization",
+    "imas",
+    "dialetheic",
+    "paraconsistent",
+    "ob3ect-vault",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.20",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.5"]
+dev = ["pytest", "pytest-cov", "black", "ruff"]
+
+[project.scripts]
+cr3 = "cr3echrz.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/lando-operator/cr3echrz"
+Repository = "https://github.com/lando-operator/cr3echrz"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cr3echrz*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100

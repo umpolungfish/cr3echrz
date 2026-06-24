@@ -1,0 +1,2 @@
+[console_scripts]
+cr3 = cr3echrz.cli:main

@@ -1,3 +1,32 @@
+Metadata-Version: 2.4
+Name: cr3echrz
+Version: 1.0.0
+Summary: Unified cr3echrz framework — 12 universal IMASM opcodes, 7 theorem engines, 271 vault ob3ects, Belnap FOUR logic, Frobenius verification (μ∘δ=id)
+Author: Lando⊗⊙perator
+License: MIT
+Project-URL: Homepage, https://github.com/lando-operator/cr3echrz
+Project-URL: Repository, https://github.com/lando-operator/cr3echrz
+Keywords: imscribing-grammar,belnap-logic,frobenius-verification,theorem-operationalization,imas,dialetheic,paraconsistent,ob3ect-vault
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.20
+Provides-Extra: plot
+Requires-Dist: matplotlib>=3.5; extra == "plot"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+
 # cr3echrz — Unified Operationalized Theorem & Ob3ect Framework
 
 **Author:** Lando⊗⊙perator  

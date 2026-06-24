@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+"""p3 — Ob3ect Vault launcher. Run any of 265+ ob3ects through 19-step IMASM bootstrap."""
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+from main import main
+main()
