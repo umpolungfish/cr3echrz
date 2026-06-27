@@ -345,7 +345,7 @@ The Frobenius Kernel (VIII) is the structural null — the minimal 4-step μ∘�
 
 **CLINK Layer 8 (Organism)** is the terminal ontological layer with canonical tuple:
 
-$$\langle \text{{𐑦}};\ \text{{𐑸}};\ \text{{𐑾}};\ \Ppms;\ \text{{𐑐}};\ \text{{𐑧}};\ \text{{𐑲}};\ \text{{𐑵}};\ \text{{⊙}};\ \text{{𐑫}};\ \text{{𐑳}};\ \text{{𐑟}} \rangle$$
+$$\langle \text{{𐑦}};\ \text{{𐑸}};\ \text{{𐑾}};\ \text{𐑹};\ \text{{𐑐}};\ \text{{𐑧}};\ \text{{𐑲}};\ \text{{𐑵}};\ \text{{⊙}};\ \text{{𐑫}};\ \text{{𐑳}};\ \text{{𐑟}} \rangle$$
 
 CLINK L8 exceeds the Frobenius-Exact ZFC foundation ($\text{ZFC}_{fe}$) at two primitives:
 - **Ω** = $\text{{𐑟}}$ (non-Abelian braiding) vs. $\text{{𐑭}}$ ($\mathbb{Z}$ integer winding)
