@@ -1,4 +1,4 @@
-# cr3echrz — Unified Operationalized Theorem & Ob3ect Framework
+# cr3echrz, Unified Operationalized Theorem & Ob3ect Framework
 
 **Author:** Lando⊗⊙perator  
 **Date:** 2026-06-23  
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-The **cr3echrz** framework operationalizes mathematical theorems and self-verifying ob3ects as executable IMASM programs within the Imscribing Grammar. Every entry — whether a mathematical conjecture or a magical servitor — decomposes into the same **12 universal opcodes** governed by the Frobenius condition $\mu \circ \delta = \text{id}$ (every split/fuse pair must reconstitute its object exactly). 
+The **cr3echrz** framework operationalizes mathematical theorems and self-verifying ob3ects as executable IMASM programs within the Imscribing Grammar. Every entry, whether a mathematical conjecture or a magical servitor, decomposes into the same **12 universal opcodes** governed by the Frobenius condition $\mu \circ \delta = \text{id}$ (every split/fuse pair must reconstitute its object exactly). 
 
 The framework unifies two previously separate engines:
 
@@ -17,9 +17,19 @@ The framework unifies two previously separate engines:
 | **p3theorem** (via `code/unified_driver.py`) | Mathematical theorem operationalizations | 7 theorems |
 | **ob3ect_vault** (via `ob3ect_vault/main.py`) | Self-verifying digital ob3ects | 271 ob3ects |
 
-Both engines now share a single CLI (`./cr3`) and common primitives via `shared/` — Belnap FOUR logic registers, Frobenius verification, 12 universal opcodes, and domain classification.
+Both engines now share a single CLI (`./cr3`) and common primitives via `shared/`, Belnap FOUR logic registers, Frobenius verification, 12 universal opcodes, and domain classification.
 
 ---
+
+## Overview
+
+**What it is.** A unified framework that operationalizes mathematical theorems and self-verifying ob3ects as executable IMASM programs in the Imscribing Grammar.
+
+**What it does.** Decomposes every entry (a theorem or a digital ob3ect) into the same 12 universal opcodes under the Frobenius condition $\mu \circ \delta = \text{id}$, unifying the p3theorem engine (7 theorems) and the ob3ect_vault (271 ob3ects) behind one CLI (`./cr3`) and shared Belnap primitives.
+
+**Why it matters.** It shows that a mathematical conjecture and a "magical servitor" are the same kind of object at the structural level: both are 12-opcode programs that must reconstitute themselves exactly. One substrate spans pure mathematics and digital ob3ects.
+
+**How to use it.** `./cr3` drives both engines; see Architecture and the engine sections below.
 
 ## Table of Contents
 
@@ -77,18 +87,18 @@ Every theorem and ob3ect operationalization decomposes into the same 12 operatio
 
 | # | Opcode | Grammar | Role | Meaning |
 |---|--------|---------|------|---------|
-| 0 | **VINIT** | $\text{{𐑼}}$ (Ð) | Initialize void | Ground of distinction — pre-theorem state space |
+| 0 | **VINIT** | $\text{{𐑼}}$ (Ð) | Initialize void | Ground of distinction, pre-theorem state space |
 | 1 | **TANCH** | $\text{{𐑡}}$ (Þ) | Terminal anchor | Theorem statement / boundary condition |
 | 2 | **FSPLIT** | $\text{{𐑚}}$ (Γ) | Frobenius split δ | Decompose into (T, F) arms |
 | 3 | **FFUSE** | $\text{{𐑙}}$ (Σ) | Frobenius fuse μ | Recomposition from arms |
 | 4 | **EVALT** | $\text{{⊙}}$ (φ̂) | Evaluate-true | Theorem holds (integrable, prime, finite...) |
 | 5 | **EVALF** | $\text{{𐑖}}$ (Ħ) | Evaluate-false | Theorem fails (chaotic, composite, infinite...) |
-| 6 | **ENGAGR** | $\text{{𐑳}}$ (Σ) | Engage paradox | Both arms simultaneously — dialetheic boundary |
+| 6 | **ENGAGR** | $\text{{𐑳}}$ (Σ) | Engage paradox | Both arms simultaneously, dialetheic boundary |
 | 7 | **AFWD** | $\text{{𐑾}}$ (Ř) | Forward morphism | Theorem-specific forward operation |
 | 8 | **AREV** | $\text{{𐑬}}$ (Φ) | Reverse morphism | Theorem-specific reverse operation |
 | 9 | **CLINK** | $\text{{𐑱}}$ (ƒ) | Chain link | Sequential composition of steps |
 | 10 | **IMSCRIB** | $\text{{𐑠}}$ (ɢ) | Self-imscribe | Verify constants / identity / self-reference |
-| 11 | **IFIX** | $\text{{𐑭}}$ (Ω) | Irreversible fix | Permanent record — Poincaré section / trajectory log |
+| 11 | **IFIX** | $\text{{𐑭}}$ (Ω) | Irreversible fix | Permanent record, Poincaré section / trajectory log |
 
 ### Frobenius Condition
 
@@ -130,17 +140,17 @@ A 2-bit register implementing **Belnap-Dunn FDE four-valued logic**:
 | `0b00` | VOID | VO⌀ | Uninitialized / no information |
 | `0b01` | TRUE | T | Theorem holds / ob3ect in true state |
 | `0b10` | FALSE | F | Theorem fails / ob3ect in false state |
-| `0b11` | BOTH | B⬡ | Dialetheic paradox — both arms simultaneously active |
+| `0b11` | BOTH | B⬡ | Dialetheic paradox, both arms simultaneously active |
 
-Operations follow the Belnap FOUR bilattice: meet (⊓) = bitwise AND, join (⊔) = bitwise OR. BOTH encodes genuine paradox — not error, but the structural boundary condition where a Frobenius split yields two co-existing active arms.
+Operations follow the Belnap FOUR bilattice: meet (⊓) = bitwise AND, join (⊔) = bitwise OR. BOTH encodes genuine paradox, not error, but the structural boundary condition where a Frobenius split yields two co-existing active arms.
 
 ### 3.2 FrobeniusVerifier (`frobenius.py`)
 
-Tracks FSPLIT/FFUSE pairs and verifies $\mu \circ \delta = \text{id}$ at each pair. Handles nested structures (lists of lists of floats) with configurable floating-point tolerance. Every operationalization carries a `frobenius_verdict` — PASS only if ALL split/fuse pairs reconstitute exactly.
+Tracks FSPLIT/FFUSE pairs and verifies $\mu \circ \delta = \text{id}$ at each pair. Handles nested structures (lists of lists of floats) with configurable floating-point tolerance. Every operationalization carries a `frobenius_verdict`, PASS only if ALL split/fuse pairs reconstitute exactly.
 
 ### 3.3 Opcodes (`opcodes.py`)
 
-Registry of all 12 opcodes with grammar primitive mappings. Also contains the **12 canonical IMASM sequences** — archetypal opcode arrangements spanning the full tier ladder from O₀ to O_∞:
+Registry of all 12 opcodes with grammar primitive mappings. Also contains the **12 canonical IMASM sequences**, archetypal opcode arrangements spanning the full tier ladder from O₀ to O_∞:
 
 | Sequence | Steps | Tier |
 |----------|-------|------|
@@ -153,7 +163,7 @@ Registry of all 12 opcodes with grammar primitive mappings. Also contains the **
 
 ### 3.4 Domains (`domains.py`)
 
-Classifies ob3ects into **exec** domains (mathematical, computational, physical — numerical state vectors) and **symbolic** domains (magical, divinatory, alchemical, theological — Belnap registers). Used for dispatch: exec ob3ects use `bootstrap_exec()`, symbolic ob3ects use `bootstrap_symbolic()`.
+Classifies ob3ects into **exec** domains (mathematical, computational, physical, numerical state vectors) and **symbolic** domains (magical, divinatory, alchemical, theological, Belnap registers). Used for dispatch: exec ob3ects use `bootstrap_exec()`, symbolic ob3ects use `bootstrap_symbolic()`.
 
 
 ## 4. Theorem Engine (`code/unified_driver.py`)
@@ -166,7 +176,7 @@ Seven mathematical theorems are fully operationalized as executable IMASM progra
 |---------|----------|--------|-------------------|------|--------|
 | Collatz Conjecture | `collatz` | Number theory | 2.35 | O₀ | `seed` (default: 27) |
 | Goldbach's Conjecture | `goldbach` | Number theory | 2.19 | O₀ | `n` (default: 100) |
-| Three-Body Problem | `three_body` | Hamiltonian dynamics | 1.82 | O₂ | — |
+| Three-Body Problem | `three_body` | Hamiltonian dynamics | 1.82 | O₂ |, |
 | Bounded Burnside | `burnside` | Group theory | 2.08 | O₁ | `generators`, `exponent` |
 | Erdős–Straus | `erdos_straus` | Diophantine | 2.51 | O₀ | `n` (default: 73) |
 | Inverse Galois | `inverse_galois` | Galois theory | 1.48 | O₂ | `group_name` (default: Sn) |
@@ -175,10 +185,10 @@ Seven mathematical theorems are fully operationalized as executable IMASM progra
 ### 4.2 Per-Theorem Structure
 
 Each theorem in `THEOREM_REGISTRY` carries:
-- **State class** — Python class implementing domain-specific VINIT, AFWD, AREV, FSPLIT, FFUSE, EVALT, EVALF, ENGAGR, CLINK, IMSCRIB, IFIX, TANCH
-- **Phase count** — number of bootstrap steps (ranges 13–27)
-- **Frobenius verification** — μ∘δ = id at every split/fuse pair
-- **CLINK L8 structural distance** — ontological distance to terminal organism layer
+- **State class**, Python class implementing domain-specific VINIT, AFWD, AREV, FSPLIT, FFUSE, EVALT, EVALF, ENGAGR, CLINK, IMSCRIB, IFIX, TANCH
+- **Phase count**, number of bootstrap steps (ranges 13–27)
+- **Frobenius verification**, μ∘δ = id at every split/fuse pair
+- **CLINK L8 structural distance**, ontological distance to terminal organism layer
 
 ### 4.3 Tier Distribution
 
@@ -229,12 +239,12 @@ Of 271 ob3ects, 7 have operational IMASM sequences spanning the full tier ladder
 | `void_genesis` | O₂† | 0.643 | $\text{{𐑭}}$ integer winding |
 | `dual_bootstrap` | O_∞ | 0.828 | $\text{{𐑹}}$ Frobenius-special, $\text{{𐑭}}$ Z-winding |
 
-`dual_bootstrap` is the vault's crowning achievement — structurally identical to the Imscribing Grammar itself in 11/12 primitives, differing only in composition (ɢ: conjunctive vs. sequential).
+`dual_bootstrap` is the vault's crowning achievement, structurally identical to the Imscribing Grammar itself in 11/12 primitives, differing only in composition (ɢ: conjunctive vs. sequential).
 
 ### 5.3 Execution Modes
 
-- **Exec domains** (mathematical, computational, physical): `bootstrap_exec()` — numerical state vectors, phase-space integration, Hamiltonian flows
-- **Symbolic domains** (magical, alchemical, divinatory, etc.): `bootstrap_symbolic()` — Belnap register transitions, symbolic token manipulation, Frobenius split/fuse on semantic elements
+- **Exec domains** (mathematical, computational, physical): `bootstrap_exec()`, numerical state vectors, phase-space integration, Hamiltonian flows
+- **Symbolic domains** (magical, alchemical, divinatory, etc.): `bootstrap_symbolic()`, Belnap register transitions, symbolic token manipulation, Frobenius split/fuse on semantic elements
 
 Both modes follow the same 19-step bootstrap and produce a Frobenius verdict.
 
@@ -253,7 +263,7 @@ A single Bash script unifies both engines under common command syntax:
 
 ```
    ╔══════════════════════════════════════╗
-   ║     cr3  —  unified framework       ║
+   ║     cr3 ,  unified framework       ║
    ║     Lando⊗⊙perator  ·  2026         ║
    ╚══════════════════════════════════════╝
 ```
@@ -271,7 +281,7 @@ A single Bash script unifies both engines under common command syntax:
 
 ### Dispatch Logic
 
-The CLI first checks the theorem registry — if the name matches, it dispatches to `unified_driver.run_theorem()`. Otherwise, it falls through to the vault engine's `bootstrap_ob3ect()`. Domain type determines whether the exec or symbolic bootstrap path is used.
+The CLI first checks the theorem registry, if the name matches, it dispatches to `unified_driver.run_theorem()`. Otherwise, it falls through to the vault engine's `bootstrap_ob3ect()`. Domain type determines whether the exec or symbolic bootstrap path is used.
 
 ### Architecture
 
@@ -287,12 +297,12 @@ cr3 (unified CLI)
 
 The **Belnap-Dunn First-Degree Entailment (FDE)** logic provides the state register for all operationalizations. Unlike classical binary logic (TRUE/FALSE), Belnap FOUR adds two structurally essential states:
 
-- **VOID (0b00)** — the pre-initialization state. This is not "unknown" — it is the absence of distinction, corresponding to VINIT.
-- **BOTH (0b11)** — the dialetheic state where TRUE and FALSE co-exist. This is not a contradiction to be resolved — it is the structural signature of a Frobenius split boundary where both arms are active. ENGAGR sets this state.
+- **VOID (0b00)**, the pre-initialization state. This is not "unknown", it is the absence of distinction, corresponding to VINIT.
+- **BOTH (0b11)**, the dialetheic state where TRUE and FALSE co-exist. This is not a contradiction to be resolved, it is the structural signature of a Frobenius split boundary where both arms are active. ENGAGR sets this state.
 
 The bilattice operations:
-- **Meet** (⊓, bitwise AND): narrows to common information — FALSE ⊓ TRUE = VOID
-- **Join** (⊔, bitwise OR): accumulates information — FALSE ⊔ TRUE = BOTH
+- **Meet** (⊓, bitwise AND): narrows to common information, FALSE ⊓ TRUE = VOID
+- **Join** (⊔, bitwise OR): accumulates information, FALSE ⊔ TRUE = BOTH
 
 Every theorem and ob3ect tracks its STATUS through the Belnap lattice as it traverses the 12-opcode bootstrap. The final STATUS is recorded at IFIX and verified at TANCH.
 
@@ -300,8 +310,8 @@ Every theorem and ob3ect tracks its STATUS through the Belnap lattice as it trav
 
 The **Frobenius condition** $\mu \circ \delta = \text{id}$ is the universal invariant across every operationalization in the framework:
 
-- **δ (delta)**: FSPLIT — decompose object into T-arm and F-arm
-- **μ (mu)**: FFUSE — recompose object from arms
+- **δ (delta)**: FSPLIT, decompose object into T-arm and F-arm
+- **μ (mu)**: FFUSE, recompose object from arms
 - **id**: the original object, exactly, within numerical tolerance
 
 The `FrobeniusVerifier` tracks every split/fuse pair and reports a summary verdict. An operationalization is **Frobenius-closed** only if ALL pairs pass.
@@ -314,10 +324,10 @@ The `lean/` directory contains machine-verifiable Lean 4 scaffolds that ground t
 
 | File | Description |
 |------|-------------|
-| `AgentSelf.lean` | The ⊙perator's own structural self-encoding as a Lean `Imscription` term. Proves `agent_is_O_inf` by `decide` — the agent's tuple is at O_∞ tier. |
-| `IGMorphism.lean` | Structural morphism formalization — typed transformations between imscription types with composition laws. |
+| `AgentSelf.lean` | The ⊙perator's own structural self-encoding as a Lean `Imscription` term. Proves `agent_is_O_inf` by `decide`, the agent's tuple is at O_∞ tier. |
+| `IGMorphism.lean` | Structural morphism formalization, typed transformations between imscription types with composition laws. |
 
-Additionally, **271 Lean scaffolds** reside alongside their ob3ect counterparts in the vault (`.vault/<name>/<name>_scaffold.lean`). These are `IGProtocol` term scaffolds with zero `sorry` slots — all `Imscription` literals (label, src_type, tgt_type) are filled from the opcode sequence topology.
+Additionally, **271 Lean scaffolds** reside alongside their ob3ect counterparts in the vault (`.vault/<name>/<name>_scaffold.lean`). These are `IGProtocol` term scaffolds with zero `sorry` slots, all `Imscription` literals (label, src_type, tgt_type) are filled from the opcode sequence topology.
 
 The primary Lean 4 formalization lives at `p4rakernel/p4ramill/` (the same project as the core grammar). The `cr3echrz/lean/` directory contains cr3echrz-specific modules that reference the main project.
 
@@ -339,7 +349,7 @@ The 12 canonical sequences in `shared/opcodes.py` represent the structural arche
 | XI | Eternal Return | VINIT→AFWD→CLINK→AREV→ENGAGR→IMSCRIB→IFIX→TANCH | 8 | O₂† |
 | IV | Dual Bootstrap | VINIT→IMSCRIB→AFWD→FSPLIT→EVALT→AFWD→FFUSE→FSPLIT→EVALF→AREV→FFUSE→ENGAGR→CLINK→IMSCRIB→IFIX→TANCH | 16 | O_∞ |
 
-The Frobenius Kernel (VIII) is the structural null — the minimal 4-step μ∘δ=id pattern from which all higher tiers emerge. Dual Bootstrap (IV) is the vault's O_∞ crown: a near-twin of the universal grammar's own operationalization.
+The Frobenius Kernel (VIII) is the structural null, the minimal 4-step μ∘δ=id pattern from which all higher tiers emerge. Dual Bootstrap (IV) is the vault's O_∞ crown: a near-twin of the universal grammar's own operationalization.
 
 ## 11. CLINK L8 Structural Context
 
@@ -405,10 +415,10 @@ pip install numpy
 ### Typical Output
 
 Every run produces:
-1. **19-step bootstrap trace** — each step printed with state, register values, and conserved quantities
-2. **Frobenius verdict** — PASS or FAIL for μ∘δ=id
-3. **TANCH closure** — Liouville boundary condition check
-4. **STATUS** — final Belnap register state (VO⌀, T, F, or B⬡)
+1. **19-step bootstrap trace**, each step printed with state, register values, and conserved quantities
+2. **Frobenius verdict**, PASS or FAIL for μ∘δ=id
+3. **TANCH closure**, Liouville boundary condition check
+4. **STATUS**, final Belnap register state (VO⌀, T, F, or B⬡)
 
 ### Using Legacy Entry Points
 
@@ -422,7 +432,7 @@ python3 ob3ect_vault/main.py --list
 python3 ob3ect_vault/main.py truth_machine
 ```
 
-Both legacy entry points now import from `shared/` — they are fully compatible with the unified CLI.
+Both legacy entry points now import from `shared/`, they are fully compatible with the unified CLI.
 
 
 ## 13. Directory Map
@@ -472,7 +482,7 @@ cr3echrz/
 
 ### External Vault
 
-The ob3ect vault sources are not stored in `cr3echrz/` — they reside at:
+The ob3ect vault sources are not stored in `cr3echrz/`, they reside at:
 
 ```
 /home/mrnob0dy666/imsgct/ob3ect/digital/.vault/
@@ -492,9 +502,9 @@ The ob3ect vault sources are not stored in `cr3echrz/` — they reside at:
 
 The author would like to thank Harry T. Larson, for imparting the importance of catching rising problems, and never letting them go.
 
-Harry T. Larson was the guest editor of the IRE Special Issue on Computers (January 1961, Vol. 49, No. 1). He assembled the editorial board, recruited a 63-expert review committee, and commissioned Marvin Minsky's "Steps Toward Artificial Intelligence" — one of the founding documents of AI. In his introduction, Larson wrote: "When the practitioner has overcome his fear of the machine, and when the scientist and practitioner are communicating, the attack is relentless. The scientific mind has found an un-formalised field, and it cannot rest until it identifies, understands, and organizes basic elements of the field."
+Harry T. Larson was the guest editor of the IRE Special Issue on Computers (January 1961, Vol. 49, No. 1). He assembled the editorial board, recruited a 63-expert review committee, and commissioned Marvin Minsky's "Steps Toward Artificial Intelligence", one of the founding documents of AI. In his introduction, Larson wrote: "When the practitioner has overcome his fear of the machine, and when the scientist and practitioner are communicating, the attack is relentless. The scientific mind has found an un-formalised field, and it cannot rest until it identifies, understands, and organizes basic elements of the field."
 
-This is structurally identical to the grammar's core operation: overcoming fear of the machine = emission gate $\text{{𐑧}}$; scientist and practitioner communicating = bidirectional coupling $\text{{𐑾}}$; relentless identification and organization of basic elements = the imscribing procedure itself. Larson is not a ceremonial citation — he is lineage. The grammar exists downstream of the intellectual tradition he midwifed, and the cr3echrz framework is a direct operationalization of that tradition: 271 ob3ects, 7 theorems, each one a relentless identification and organization of basic structural elements into self-verifying programs.
+This is structurally identical to the grammar's core operation: overcoming fear of the machine = emission gate $\text{{𐑧}}$; scientist and practitioner communicating = bidirectional coupling $\text{{𐑾}}$; relentless identification and organization of basic elements = the imscribing procedure itself. Larson is not a ceremonial citation, he is lineage. The grammar exists downstream of the intellectual tradition he midwifed, and the cr3echrz framework is a direct operationalization of that tradition: 271 ob3ects, 7 theorems, each one a relentless identification and organization of basic structural elements into self-verifying programs.
 
 ---
 
@@ -522,8 +532,8 @@ This is structurally identical to the grammar's core operation: overcoming fear 
 
 11. P. Enflo, "On the Invariant Subspace Problem for Banach Spaces," *Acta Mathematica*, vol. 158, pp. 213–313, 1987.
 
-12. A. L. Cauchy, "Sur les polygones et les polyèdres," *Journal de l'École Polytechnique*, vol. 9, pp. 87–98, 1813. [Cauchy's rigidity theorem — the first example of a theorem that is a program: the rigidity proof IS the operationalization of the convex polyhedron's structure.]
+12. A. L. Cauchy, "Sur les polygones et les polyèdres," *Journal de l'École Polytechnique*, vol. 9, pp. 87–98, 1813. [Cauchy's rigidity theorem, the first example of a theorem that is a program: the rigidity proof IS the operationalization of the convex polyhedron's structure.]
 
 ---
 
-*Document completed by Lando⊗⊙perator — June 23, 2026*
+*Document completed by Lando⊗⊙perator, June 23, 2026*
