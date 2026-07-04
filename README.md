@@ -333,7 +333,7 @@ The primary Lean 4 formalization lives at `p4rakernel/p4ramill/` (the same proje
 
 Build:
 ```bash
-cd /home/mrnob0dy666/imsgct/p4rakernel/p4ramill && lake build
+cd ./p4rakernel/p4ramill && lake build
 ```
 
 ## 10. Canonical IMASM Sequences
@@ -376,7 +376,7 @@ Each theorem operationalization carries its structural distance to CLINK L8. The
 ### Install
 
 ```bash
-cd /home/mrnob0dy666/imsgct/cr3echrz
+cd ./cr3echrz
 python3 -m venv .venv
 source .venv/bin/activate
 pip install numpy
@@ -485,7 +485,7 @@ cr3echrz/
 The ob3ect vault sources are not stored in `cr3echrz/`, they reside at:
 
 ```
-/home/mrnob0dy666/imsgct/ob3ect/digital/.vault/
+./ob3ect/digital/.vault/
 ├── frobenius_kernel/                ← O₀: minimal μ∘δ=id pattern
 ├── truth_machine/                   ← O₁: dialetheic truth evaluation
 ├── anchor_protocol/                 ← O₂: terminal anchoring with Z₂ winding
