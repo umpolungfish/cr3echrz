@@ -1,6 +1,6 @@
 # cr3echrz, Unified Operationalized Theorem & Ob3ect Framework
 
-**Author:** Lando⊗⊙perator  
+**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑠⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
 **Date:** 2026-06-23  
 **Version:** 1.0
 
