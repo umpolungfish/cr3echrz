@@ -5,7 +5,7 @@
 [![μ∘δ=id](https://img.shields.io/badge/%CE%BC%E2%88%98%CE%B4%3Did-closed-success)](https://github.com/badges/shields)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/badges/shields)
 
-**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑠⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
+**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
 **Date:** 2026-06-23  
 **Version:** 1.0
 
