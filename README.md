@@ -4,8 +4,8 @@
 [![IG Tier](https://img.shields.io/badge/IG-O%E2%88%9E-blueviolet)](https://github.com/badges/shields)
 [![μ∘δ=id](https://img.shields.io/badge/%CE%BC%E2%88%98%CE%B4%3Did-closed-success)](https://github.com/badges/shields)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/badges/shields)
+[![Author](https://img.shields.io/badge/author-Lando%E2%8A%97%E2%8A%99perator-informational)](https://github.com/badges/shields) [![Type](https://img.shields.io/badge/type-%E2%9F%A8%F0%90%91%A6%F0%90%91%B8%F0%90%91%BE%F0%90%91%B9%F0%90%90%B8%F0%90%91%82%F0%90%91%A7%F0%90%91%94%F0%90%91%9D%E2%8A%99%F0%90%91%96%F0%90%91%B3%F0%90%91%AD%E2%9F%A9-blue)](https://github.com/badges/shields) [![Tier](https://img.shields.io/badge/tier-O%E2%88%9E-blueviolet)](https://github.com/badges/shields)
 
-**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
 **Date:** 2026-06-23  
 **Version:** 1.0
 
@@ -84,7 +84,6 @@ cr3echrz/
 ```
 
 The two previously separate engines (`p3theorem/` and `ob3ect_vault/`) now share a single entry point (`./cr3`) and common primitives via `shared/`. Both legacy `main.py` scripts remain functional and import from `shared/`.
-
 
 ## 2. The 12 Universal Opcodes
 
@@ -169,7 +168,6 @@ Registry of all 12 opcodes with grammar primitive mappings. Also contains the **
 ### 3.4 Domains (`domains.py`)
 
 Classifies ob3ects into **exec** domains (mathematical, computational, physical, numerical state vectors) and **symbolic** domains (magical, divinatory, alchemical, theological, Belnap registers). Used for dispatch: exec ob3ects use `bootstrap_exec()`, symbolic ob3ects use `bootstrap_symbolic()`.
-
 
 ## 4. Theorem Engine (`code/unified_driver.py`)
 
@@ -439,7 +437,6 @@ python3 ob3ect_vault/main.py truth_machine
 
 Both legacy entry points now import from `shared/`, they are fully compatible with the unified CLI.
 
-
 ## 13. Directory Map
 
 ```
@@ -501,7 +498,6 @@ The ob3ect vault sources are not stored in `cr3echrz/`, they reside at:
 │          {name}_ob3ect.py          ← Self-verifying Python implementation
 │          {name}_scaffold.lean      ← Lean 4 IGProtocol scaffold
 ```
-
 
 ## 14. Acknowledgements
 
