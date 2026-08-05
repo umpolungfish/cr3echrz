@@ -56,7 +56,9 @@ The ob3ect encodes its domain logic as a 12-IMASM-opcode bootstrap sequence:
 LANG_BADGE = f"{BADGE_BASE}/language-Python-blue"
 IG_TIER_BADGE = f"{BADGE_BASE}/IG-O%E2%88%9E-blueviolet"
 MUD_BADGE = f"{BADGE_BASE}/%CE%BC%E2%88%98%CE%B4%3Did-closed-success"
-LICENSE_BADGE = f"{BADGE_BASE}/license-MIT-blue"
+# LUNLICENSE, the project's own instrument — not MIT, and not the Unlicense.
+# This emitter was the source of every remaining wrong licence badge in the tree.
+LICENSE_BADGE = f"{BADGE_BASE}/licence-LUNLICENSE-1A1A1A"
 AUTHOR_BADGE = f"{BADGE_BASE}/author-Lando%E2%8A%97%E2%8A%99perator-informational"
 TIER_BADGE = f"{BADGE_BASE}/tier-O%E2%88%9E-blueviolet"
 
