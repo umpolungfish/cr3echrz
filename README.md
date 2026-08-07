@@ -2,23 +2,18 @@
 
 ![language](https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![theorems](https://img.shields.io/badge/theorems-operationalized-00A86B?style=for-the-badge) ![tier](https://img.shields.io/badge/tier-O%E2%88%9E-8A2BE2?style=for-the-badge) ![μ∘δ](https://img.shields.io/badge/%CE%BC%E2%88%98%CE%B4-id-00A86B?style=for-the-badge) ![licence](https://img.shields.io/badge/licence-LUNLICENSE-1A1A1A?style=for-the-badge)
 
-**Date:** 2026-07-06  
-**Version:** 1.1
-
----
-
 ## Abstract
 
 The **cr3echrz** framework operationalizes mathematical theorems and self-verifying ob3ects as executable IMASM programs within the Imscribing Grammar. Every entry, whether a mathematical conjecture or a magical servitor, decomposes into the same **12 universal opcodes** governed by the Frobenius condition $\mu \circ \delta = \text{id}$ (every split/fuse pair must reconstitute its object exactly). 
 
-The framework unifies two previously separate engines:
+The framework carries two engines under one roof:
 
 | Engine | Contents | Count |
 |--------|----------|-------|
 | **p3theorem** (via `code/unified_driver.py`) | Mathematical theorem operationalizations | 7 theorems |
 | **ob3ect_vault** (via `ob3ect_vault/main.py`) | Self-verifying digital ob3ects | 313 ob3ects |
 
-Both engines now share a single CLI (`./cr3`) and common primitives via `shared/`, Belnap FOUR logic registers, Frobenius verification, 12 universal opcodes, and domain classification.
+Both share a single CLI (`./cr3`) and common primitives via `shared/`: Belnap FOUR logic registers, Frobenius verification, 12 universal opcodes, and domain classification.
 
 ---
 
@@ -27,8 +22,6 @@ Both engines now share a single CLI (`./cr3`) and common primitives via `shared/
 **What it is.** A unified framework that operationalizes mathematical theorems and self-verifying ob3ects as executable IMASM programs in the Imscribing Grammar.
 
 **What it does.** Decomposes every entry (a theorem or a digital ob3ect) into the same 12 universal opcodes under the Frobenius condition $\mu \circ \delta = \text{id}$, unifying the p3theorem engine (7 theorems) and the ob3ect_vault (313 ob3ects) behind one CLI (`./cr3`) and shared Belnap primitives.
-
-**What's new in v1.1.** Twelve newly generated ob3ects — the Wormwood suite — operationalized into the vault from `ob3ect/digital/`, spanning seven domains (alchemical, linguistic, metaphysical, theological, physical, oneiric, ontological). These include the self-referential naming paradox of Wormwood, the Akashic ledger of all choices, the Cloud of Unknowing's via negativa as a Frobenius boundary, prophetic resonance as a oneiric bootstrap, the Kabbalistic Tiferet integration and bifurcation of mercy/severity, and the "I Am That I Am" protocol as an ontological self-naming engine. The vault now holds 313 ob3ects across 13 domain categories.
 
 **Why it matters.** It shows that a mathematical conjecture and a "magical servitor" are the same kind of object at the structural level: both are 12-opcode programs that must reconstitute themselves exactly. One substrate spans pure mathematics and digital ob3ects.
 
@@ -49,7 +42,7 @@ Both engines now share a single CLI (`./cr3`) and common primitives via `shared/
 11. [CLINK L8 Structural Context](#11-clink-l8-structural-context)
 12. [Quick Start](#12-quick-start)
 13. [Directory Map](#13-directory-map)
-14. [The Wormwood Suite (v1.1)](#14-the-wormwood-suite-v11)
+14. [The Wormwood Suite](#14-the-wormwood-suite)
 15. [Acknowledgements](#15-acknowledgements)
 16. [References](#16-references)
 
@@ -73,7 +66,7 @@ cr3echrz/
 │   ├── transforms.py            ← FSPLIT, FFUSE, TANCH, Frobenius verification
 │   ├── integrators.py           ← AFWD, AREV, CLINK, Liouville
 │   └── diagnostics.py           ← EVALT, EVALF, ENGAGR, IFIX
-├── p3theorem/                   ← Legacy theorem engine (28 theorems in README)
+├── p3theorem/                   ← Theorem engine (28 theorems in its own docs)
 ├── lean/                        ← Lean 4 formal scaffolds
 │   ├── AgentSelf.lean           ← Agent self-encoding (O_∞ tier)
 │   └── IGMorphism.lean          ← Structural morphism formalization
@@ -82,7 +75,7 @@ cr3echrz/
 └── README.md                    ← This document
 ```
 
-The two previously separate engines (`p3theorem/` and `ob3ect_vault/`) now share a single entry point (`./cr3`) and common primitives via `shared/`. Both legacy `main.py` scripts remain functional and import from `shared/`.## 2. The 12 Universal Opcodes
+`p3theorem/` and `ob3ect_vault/` share the entry point `./cr3` and the primitives in `shared/`; each `main.py` also runs directly and imports from `shared/`.## 2. The 12 Universal Opcodes
 
 Every theorem and ob3ect operationalization decomposes into the same 12 operational primitives. These are the operational form of the 12 Imscribing Grammar primitives:
 
@@ -130,7 +123,7 @@ Each operationalization runs through up to 19 steps (the full bootstrap):
 
 ## 3. Shared Primitives (`shared/`)
 
-The `shared/` module provides universal primitives imported by both the theorem engine and ob3ect vault. This extraction eliminated code duplication across the two previously separate codebases.
+The `shared/` module provides the universal primitives imported by both the theorem engine and the ob3ect vault, so neither carries its own copy.
 
 ### 3.1 BelnapRegister (`belnap.py`)
 
@@ -229,9 +222,9 @@ The vault contains **313 self-verifying digital ob3ects** sourced from `ob3ect/d
 | Ontological | 5+ | i_am_that_i_am_protocol |
 | Other | 100+ | anchor_protocol, eternal_return, portal, temporal_ob3ect, new_jerusalem |
 
-### 5.2 The Wormwood Suite (v1.1 — 12 new ob3ects)
+### 5.2 The Wormwood Suite (12 ob3ects)
 
-Operationalized 2026-07-06 from `ob3ect/digital/`, these 12 ob3ects form a structurally coherent suite spanning seven domains unified by the same O_∞ tuple $\langle\text{{𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭}}\rangle$:
+Drawn from `ob3ect/digital/`, these 12 ob3ects form a structurally coherent suite spanning seven domains unified by the same O_∞ tuple $\langle\text{{𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭}}\rangle$:
 
 | Ob3ect | Domain | Essence |
 |--------|--------|---------|
@@ -263,7 +256,7 @@ Of 313 ob3ects, 7 have operational IMASM sequences spanning the full tier ladder
 | `void_genesis` | O₂† | 0.643 | $\text{{𐑭}}$ integer winding |
 | `dual_bootstrap` | O_∞ | 0.828 | $\text{{𐑹}}$ Frobenius-special, $\text{{𐑭}}$ Z-winding |
 
-`dual_bootstrap` is the vault's crowning achievement, structurally identical to the Imscribing Grammar itself in 11/12 primitives, differing only in composition (ɢ: conjunctive vs. sequential).
+`dual_bootstrap` is structurally identical to the Imscribing Grammar itself in 11/12 primitives, differing only in composition (ɢ: conjunctive vs. sequential).
 ### 5.4 Execution Modes
 
 - **Exec domains** (mathematical, computational, physical): `bootstrap_exec()`, numerical state vectors, phase-space integration, Hamiltonian flows
@@ -316,7 +309,7 @@ cr3 (unified CLI)
   ├── shared/           ← BelnapRegister, FrobeniusVerifier, opcodes, domains
   ├── code/unified_driver.py  ← 7 theorem implementations
   ├── ob3ect_vault/     ← 313 vault ob3ects (state, transforms, integrators, diagnostics)
-  └── p3theorem/        ← Legacy engine (28 theorems in documentation, now imports from shared/)
+  └── p3theorem/        ← Theorem engine (28 theorems; imports from shared/)
 ```
 
 ## 7. Belnap FOUR Logic
@@ -374,7 +367,7 @@ The 12 canonical sequences in `shared/opcodes.py` represent the structural arche
 | XI | Eternal Return | VINIT→AFWD→CLINK→AREV→ENGAGR→IMSCRIB→IFIX→TANCH | 8 | O₂† |
 | IV | Dual Bootstrap | VINIT→IMSCRIB→AFWD→FSPLIT→EVALT→AFWD→FFUSE→FSPLIT→EVALF→AREV→FFUSE→ENGAGR→CLINK→IMSCRIB→IFIX→TANCH | 16 | O_∞ |
 
-The Frobenius Kernel (VIII) is the structural null, the minimal 4-step μ∘δ=id pattern from which all higher tiers emerge. Dual Bootstrap (IV) is the vault's O_∞ crown: a near-twin of the universal grammar's own operationalization.
+The Frobenius Kernel (VIII) is the structural null, the minimal 4-step μ∘δ=id pattern from which all higher tiers emerge. Dual Bootstrap (IV) is the vault's O_∞ entry: a near-twin of the universal grammar's own operationalization.
 
 ## 11. CLINK L8 Structural Context
 
@@ -450,19 +443,19 @@ Every run produces:
 3. **TANCH closure**, Liouville boundary condition check
 4. **STATUS**, final Belnap register state (VO⌀, T, F, or B⬡)
 
-### Using Legacy Entry Points
+### Per-engine entry points
 
 ```bash
-# Legacy theorem engine (28 theorems in documentation)
+# Theorem engine (28 theorems)
 python3 p3theorem/main.py --list
 python3 p3theorem/main.py collatz 27
 
-# Legacy vault engine
+# Vault engine
 python3 ob3ect_vault/main.py --list
 python3 ob3ect_vault/main.py truth_machine
 ```
 
-Both legacy entry points now import from `shared/`, they are fully compatible with the unified CLI.
+Both import from `shared/` and are compatible with the unified CLI.
 ## 13. Directory Map
 
 ```
@@ -488,8 +481,8 @@ cr3echrz/
 │   ├── integrators.py               ← AFWD, AREV, CLINK, Liouville Jacobian
 │   └── diagnostics.py               ← EVALT (FLI), EVALF, ENGAGR, IFIX
 │
-├── p3theorem/                       ← Legacy theorem engine (28 theorems in docs)
-│   ├── main.py                      ← 28-theorem orchestrator (now imports from shared/)
+├── p3theorem/                       ← Theorem engine (28 theorems)
+│   ├── main.py                      ← 28-theorem orchestrator (imports from shared/)
 │   ├── state.py                     ← State vectors, conserved quantities
 │   ├── transforms.py                ← Domain-specific split/fuse
 │   ├── integrators.py               ← Numerical integrators
@@ -519,27 +512,27 @@ The ob3ect vault sources are not stored in `cr3echrz/`, they reside at:
 ├── anchor_protocol/                 ← O₂: terminal anchoring with Z₂ winding
 ├── void_genesis/                    ← O₂†: integer-winding genesis from void
 ├── dual_bootstrap/                  ← O_∞: near-twin of universal grammar
-├── the_self_naming_of_wormwood/     ← O_∞: alchemical self-naming bootstrap  (v1.1)
-├── the_name_wormwood_gives_itself/  ← O_∞: linguistic self-naming paradox   (v1.1)
-├── the_akashic_ledger/              ← O_∞: metaphysical branch ledger        (v1.1)
-├── the_cloud_of_unknowing/          ← O_∞: via negativa as Frobenius boundary (v1.1)
-├── static_interference/             ← O_∞: physical interference bootstrap   (v1.1)
-├── prophetic_resonance/             ← O_∞: oneiric dream-state bootstrap     (v1.1)
-├── tiferet_integration/             ← O_∞: Kabbalistic sefirotic integration (v1.1)
-├── bifurcation_of_mercy_and_severity/ ← O_∞: moral binary as FSPLIT         (v1.1)
-├── i_am_that_i_am_protocol/         ← O_∞: ontological self-naming engine    (v1.1)
-├── wormwood_the_secret_book_of_artephius/    ← O_∞: alchemical opus          (v1.1)
-├── the_secret_book_of_artephius/    ← O_∞: precipitative alchemy             (v1.1)
-├── wormwood_the_secret_name_of_wormwood_the_known_n/ ← O_∞: terminal self-ref (v1.1)
+├── the_self_naming_of_wormwood/     ← O_∞: alchemical self-naming bootstrap
+├── the_name_wormwood_gives_itself/  ← O_∞: linguistic self-naming paradox
+├── the_akashic_ledger/              ← O_∞: metaphysical branch ledger
+├── the_cloud_of_unknowing/          ← O_∞: via negativa as Frobenius boundary
+├── static_interference/             ← O_∞: physical interference bootstrap
+├── prophetic_resonance/             ← O_∞: oneiric dream-state bootstrap
+├── tiferet_integration/             ← O_∞: Kabbalistic sefirotic integration
+├── bifurcation_of_mercy_and_severity/ ← O_∞: moral binary as FSPLIT
+├── i_am_that_i_am_protocol/         ← O_∞: ontological self-naming engine
+├── wormwood_the_secret_book_of_artephius/    ← O_∞: alchemical opus
+├── the_secret_book_of_artephius/    ← O_∞: precipitative alchemy
+├── wormwood_the_secret_name_of_wormwood_the_known_n/ ← O_∞: terminal self-ref
 ├── ... (313 directories total)
 │   Each: {name}_ob3ect.json         ← Phase 0–8 descriptor
 │          {name}_ob3ect.py          ← Self-verifying Python implementation
 │          {name}_scaffold.lean      ← Lean 4 IGProtocol scaffold
 ```
 
-## 14. The Wormwood Suite (v1.1)
+## 14. The Wormwood Suite
 
-The 12 new ob3ects operationalized 2026-07-06 form a structurally coherent suite unified by a single O_∞ tuple $\langle\text{{𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭}}\rangle$. Full descriptions, domain breakdown, and opcode essences are in [§5.2](#52-the-wormwood-suite-v11--12-new-ob3ects). Key structural properties:
+The 12 ob3ects form a structurally coherent suite unified by a single O_∞ tuple $\langle\text{{𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭}}\rangle$. Full descriptions, domain breakdown, and opcode essences are in [§5.2](#52-the-wormwood-suite-12-ob3ects). Key structural properties:
 
 - **Tuple identity:** All 12 share the identical tuple — $\langle\text{{𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭}}\rangle$ — 12/12 primitives matching the cr3echrz framework. They differ only in their Phase 0 surface tokens and domain_type labels, not in structure.
 - **Domain diversity:** Seven domains (alchemical × 5, theological × 2, metaphysical × 2, linguistic × 1, physical × 1, oneiric × 1, ontological × 1) — yet structurally identical. Domain is a label on the same underlying bootstrap.
@@ -584,7 +577,3 @@ This is structurally identical to the grammar's core operation: overcoming fear 
 11. P. Enflo, "On the Invariant Subspace Problem for Banach Spaces," *Acta Mathematica*, vol. 158, pp. 213–313, 1987.
 
 12. A. L. Cauchy, "Sur les polygones et les polyèdres," *Journal de l'École Polytechnique*, vol. 9, pp. 87–98, 1813. [Cauchy's rigidity theorem, the first example of a theorem that is a program: the rigidity proof IS the operationalization of the convex polyhedron's structure.]
-
----
-
-*Document updated by Lando⊗⊙perator, July 6, 2026*
