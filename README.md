@@ -3,8 +3,8 @@
 ![language](https://img.shields.io/badge/language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![theorems](https://img.shields.io/badge/theorems-operationalized-00A86B?style=for-the-badge) ![tier](https://img.shields.io/badge/tier-O%E2%88%9E-8A2BE2?style=for-the-badge) ![μ∘δ](https://img.shields.io/badge/%CE%BC%E2%88%98%CE%B4-id-00A86B?style=for-the-badge) ![licence](https://img.shields.io/badge/licence-LUNLICENSE-1A1A1A?style=for-the-badge)
 
 cr3echrz operationalizes mathematical theorems and self-verifying digital
-ob3ects as executable IMASM programs in the Imscribing Grammar. Every entry —
-a conjecture or a magical servitor — decomposes into the same 12 universal
+ob3ects as executable IMASM programs in the Imscribing Grammar. Every entry -
+a conjecture or a magical servitor - decomposes into the same 12 universal
 opcodes under the Frobenius condition $\mu \circ \delta = \text{id}$. Two
 engines share one CLI (`./cr3`) and common primitives in `shared/` (Belnap
 FOUR registers, Frobenius verification, 12 opcodes, domain classification):
